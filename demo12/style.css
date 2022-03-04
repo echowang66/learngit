@@ -84,7 +84,9 @@ a {
     font-size: 14px;
     color: #6666;
     margin-right: 30px;
-
+}
+.user img {
+    vertical-align: middle;
 }
 /* 1:The ending of the header */
 /* 2:The beginning of the banner */
