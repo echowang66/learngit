@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* .box1 {
+        width: 0;
+        height:0;
+        border-top:100px solid transparent;
+        border-right:50px solid skyblue;
+        border-bottom: 0 solid blue;
+        border-left: 0 solid green;
+    } */
+    .box1 {
+        width:0;
+        height:0;
+        border-color:transparent red transparent transparent;
+        border-style:solid;
+        border-width:22px 8px 0 0;
+    }
+    .price {
+        width: 180px;
+        height: 24px;
+        border:1px solid red;
+        margin:100px auto;
+        line-height: 24px;
+    }
+    .discount {
+        position: relative;
+        float:left;
+        background-color: red;
+        width: 90px;
+        height: 100%;
+        text-align: center;
+        font-weight: 700;
+        color:#fff;
+    }
+    .price .normal {
+        background-color: #fff;
+    }
+    .discount i {
+        position:absolute;
+        right:-1px;
+        top:0;
+        width:0;
+        height:0;
+        border-color:transparent blue transparent transparent;
+        border-style: solid;
+        border-width:24px 10px 0 0;
+    }
+
+
+</style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+    <div class="price">
+        <span class="discount">
+            ¥1650.00
+            <i></i>
+        </span>
+        <span class="normal">¥5088.00</span>
+       
+    </div>
+</body>
+</html>
