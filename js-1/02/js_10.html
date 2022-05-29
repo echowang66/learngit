@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var num = prompt("How many stars you want to have:");
+        // var str = '';
+        // for (var i = 1; i <= num; i++) {
+        //     str = str + '☆';
+        // }
+        // console.log(str);
+
+        // var str = ''
+        // for (var i = 1; i <= 5; i++) {
+        //     str += '☆';
+        //     for (var j = 1; j <= 5; j++) {
+        //         str = str + '';
+        //     }
+        //     console.log(str);
+
+        // }
+        // rows=columns
+        /**
+        var rows = prompt("How many rows you want to have:");
+        var colu = prompt("how many coulmn you want to print:");
+        var str = '';
+        for (var i = 0; i < rows; i++) {
+
+            for (var j = 0; j < colu; j++) {
+                str = str + '☆';
+            }
+            str = str + '\n';
+        }
+        console.log(str)
+        **/
+
+        //  倒三角星星
+        /**
+                var rows = prompt("How many rows you want to have:");
+                var str = '';
+                for (var i = 0; i < rows; i++) {
+        
+                    for (var j = i; j < rows; j++) {
+                        str = str + '☆';
+                    }
+                    str = str + '\n';
+                }
+                console.log(str)
+        
+        **/
+        //    正三角
+        /**
+            var rows = prompt("How many rows you want to have:");
+            var str = '';
+            for (var i = 0; i < rows; i++) {
+    
+                for (var j = 0; j < i; j++) {
+                    str = str + '☆';
+                }
+                str = str + '\n';
+            }
+            console.log(str)
+    **/
+
+        // 乘法表
+        /**
+        var str = '';
+        for (var i = 1; i <= 9; i++) {
+
+            for (var j = 1; j <= i; j++) {
+
+                str += j + '*' + i + '=' + j * i + '\t';
+            }
+            str = str + '\n';
+        }
+        console.log(str)
+        **/
+        //    打印人的一生
+        /**
+
+        var i = 1;
+        while (i <= 100) {
+            console.log("This is my " + i + " years");
+            i++;
+        }
+         **/
+        // 计算1-100之间所有整数的和
+        /**
+        var i = 1;
+        var num = 0;
+        while (i <= 100) {
+            num += i;
+            i++;
+        }
+        console.log(num);
+        **/
+
+        var ques = prompt('do you love me?');
+        while (ques !== 'I love you') {
+            ques = prompt('do you love me?');
+
+        }
+        alert("I love you too");
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
