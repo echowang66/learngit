@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+         * 99乘法表
+        var sum=0;
+        for (var i=1;i<=99;i++){
+            for(var j=1;j<=i;j++){
+                sum+=j+"*"+i+"="+j*i;
+
+            }
+            sum+='\n';
+           
+        }
+        console.log(sum);
+        **/
+
+    /**
+       var pass=prompt("Please enter your password:");
+       var admin=prompt("Please enter your account:");
+       while(pass !== "123456" && admin !== "admin"){
+        admin=prompt("Please enter your account:");
+        pass=prompt("Please enter your password:");
+       }
+       alert("You are excellent");
+       **/
+
+
+       
+      
+    
+
+
+         /**
+
+       var pass=prompt("Please enter your password:");
+       var admin=prompt("Please enter your account:");
+        do {
+            pass = prompt("Please enter your password:");
+            admin=prompt("Please enter your account:");
+
+        } while (pass !== "123456" && admin !== "admin")
+        alert('I LOVE YOU TOO');
+          **/
+
+         /**
+
+          var sum=0;
+          for (var i=1;i<=100;i++){
+              if(i%10==3){
+                  continue;
+              }
+              sum+=i;
+          }
+          console.log(sum);
+          **/
+         //简易ATM
+
+          /**
+         var input=prompt ("请输入您要得操作："+"\n"+
+         "1.存钱"+"\n"+
+         "2.取钱"+"\n"+
+         "3.显示余额"+"\n"+
+         "4.退出")
+         var sum=100;
+        while (input!==4){
+            if(input==1){
+             var money1=prompt("请您输入存的钱数：");
+             sum+=parseInt(money1);
+             sum1=sum
+             alert("您现在的钱数是："+sum1);
+            }
+        if(input==2){
+            var money2=prompt("请您输入要取的钱数：");
+            sum1=sum1-parseInt(money2)
+            alert("您现在的钱数是："+sum1);
+         }if(input==3){
+            alert("您现在的钱数是："+sum1);
+         }
+        }
+            alert("您现在正在退出！");
+              **/
+
+           /**
+         var sum=100;
+         while(true){
+            var input=prompt ("请输入您要得操作："+"\n"+
+         "1.存钱"+"\n"+
+         "2.取钱"+"\n"+
+         "3.显示余额"+"\n"+
+         "4.退出");
+
+         if(input=='4'){
+             break;
+         }
+
+         switch(input){
+             case'1':
+           var money1=prompt("请您输入存的钱数：");
+           sum+=parseInt(money1);
+           break
+           case'2':
+           var money2=prompt("请您输入要取的钱数：");
+           sum-=parseInt(money2);
+           break
+
+           case'3':
+           alert("您现在的钱数是："+sum)
+           break
+
+         }
+         }
+         **/
+        /**
+
+         var array=['Mon','Tues','Wedne','Thurs','Fri','Satur','Sund'];
+         console.log(array[6]);
+         **/
+        /**
+
+         var array=['关羽','张飞','马超','赵云','黄忠','刘备','姜维'];
+         for(var i=0;i<array.length;i++){
+             console.log(array[i]);
+         }
+         **/
+        /**
+        var arr=[2,6,1,7,4];
+        var sum=0;
+        var ave=0;
+        for(var i=0;i<arr.length;i++){
+            sum+=arr[i];
+            ave=sum/arr.length;
+        }
+        console.log(sum);
+        console.log(ave);
+        console.log(sum,ave);
+        **/
+        var arr=[2,6,1,77,52,25,7];
+        var max=arr[0];
+    
+            for(var j=1;j<arr.length;j++){
+                if(arr[j]>max){
+                    max=arr[j];
+                }
+            }
+        
+
+        console.log(max);
+
+
+    
+
+
+
+
+
+
+       
+         
+         
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
