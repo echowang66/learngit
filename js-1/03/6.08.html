@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        // function getResult2(num){
+        //     // var flag=true;
+        //     if(num==1){
+        //         return "1 is neither prime nor composite number."
+                
+        //     }
+        //     var temp = num - 1
+        //     while (temp != 1) {
+        //         if (num % temp == 0) {
+        //             alert(num + " is not a prime number.")
+        //             return num;
+        //         } else {
+        //             alert('the num is a prime num');
+        //             return num;
+        //         }
+        //         temp = temp - 1
+        //     }
+
+        // }
+
+        function getResult2(num){
+            if(num==1){
+                return "1 is neither prime nor composite number."
+            }
+            function count(temp) {
+                if (temp == 1 ) {
+                    alert('the ' + num + ' is a prime num');
+                    return num;
+                }
+                else if (num % temp == 0) {
+                    alert(num + " is not a prime number.")
+                    return num;
+                } else {
+                    return count(temp - 1)
+                }
+            }
+            
+            return count(num-1)
+        
+        }
+         getResult2( parseInt (num= prompt('please enter a num:')))
+
+
+//          function isPrime(num) {
+//   var sqrtnum=Math.floor(Math.sqrt(num));
+//     var prime = num != 1;
+//     for(var i=2; i<sqrtnum+1; i++) { // sqrtnum+1
+//         if(num % i == 0) {
+//             prime = false;
+//             break;
+//         }
+//     }
+//     return prime;
+// }
+
+
+/**
+function getMax(){
+    var max=arguments[0];
+ for(var i=1;i<arguments.length;i++){
+     if(max<arguments[i]){
+         max=arguments[i]
+     }
+ }
+ return max;
+}
+console.log(getMax(7,9,10))
+**/
+
+//翻转函数
+  /**
+function getResult(arr){
+var newArr=[];
+for(var i=arguments.length-1;i>=0;i--){
+
+newArr[newArr.length]=arguments[i];
+}
+return newArr;
+}
+var arr1=getResult(7,90,23,45,6767);
+console.log(arr1);
+
+
+
+function bubbleSort(arr){
+    for(var i=0;i<arr.length-1;i++){
+        for(var j=0;j<arr.length-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                var tem=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=tem;
+            }
+        }
+
+    }
+    return arr;
+}
+var re=bubbleSort([6,9,1,0]);
+console.log(re);
+
+**/
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
