@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+        function getYear(year){
+            var flag=false;
+            if(year % 4== 0 && year % 100 !== 0 || year % 400== 0){
+                flag=true;
+            }
+            return flag;
+
+        }
+        var re=getYear(year=parseInt(prompt('input a year:')))
+        console.log(re);
+        console.log(getYear(2000));
+  
+
+
+        function getYear(year){
+            
+            if(year % 4== 0 && year % 100 !== 0 || year % 400== 0){
+                return console.log('there are 29 days in Feb');
+                
+            }else{
+                return console.log('there are 28 days in Feb');
+                
+            }
+           
+
+        }
+        var re=getYear(year=parseInt(prompt('input a year:')))
+        **/
+        
+        function backDay(year){
+            var year=prompt("Please input a year: ");
+            var re=getYear(year);
+            if(re){
+                console.log('There are 29 days in Feb')
+            }else{
+                console.log('There are 28 days in Feb')
+            }
+        }
+        backDay();
+
+        function getYear(year){
+            var flag = false;
+            if(year % 4==0 && year % 100 !=0 || year % 400 ==0){
+                flag=true;
+            }
+            return flag;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
