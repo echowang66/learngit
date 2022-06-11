@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //函数的形参也可以看成是局部变量
+        function fun(){
+            var num=10; //局部变量
+            num2=10; // num2 
+        }
+        fun();
+        console.log(num2);
+        //3.从执行效率来看全局变量和局部变量
+        //(1) 全局变量只有等浏览器关闭的时候才会销毁，比较占内存
+        //(2)局部变量当程序执行完毕的时候就会销毁，比较节约内存空间
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
