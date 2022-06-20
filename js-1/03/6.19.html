@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+        function 构造函数（）{
+            this.属性=值；
+            this.方法=function() {
+
+            }
+        }
+        new 构造函数名（）；
+
+        main point:
+        1:构造函数方法名大写
+        2.构造函数没有return
+        3.调用构造函数的时候必须 new
+        4.我们只需要new star（） 调用函数就创建一个对象ldh{}
+       
+       function Star(uname,uage,ugender){
+        this.age=uname;
+        this.name=uname;
+        this.gender=ugender;
+        this.sing=function(song){
+            console.log(song);
+        }
+       }
+       var ldh= new Star('ldh',18,'male');
+       console.log(typeof ldh);
+       ldh.sing('冰雨');
+
+       main point: 构造函数
+       1： 构造函数 明星 泛指某一大类 它类似于 JAVA 语言里面的类（class）
+       2： 对象 特指 是一个具体的事物 刘德华={name: "lianpo", type: "power", blood: "500ml blood", attack: "close"}
+       3： 我们利用构造函数创建函数的过程也成为对象的实例化
+        **/
+       /**
+
+        function People(name,type,blood,attack){
+            this.name=name;
+            this.type=type;
+            this.blood=blood;
+            this.attack=attack;
+
+        }
+        var hero= new People('lianpo','power','500ml blood','close')
+        console.log(hero);
+        var hero2= new People('houyi','sheshou','100ml blood','close')
+        console.log(hero2);
+
+        var obj={name:'jhdskl',age:18}
+        for (var k in obj){
+            console.log(obj[k]);
+        }
+       
+
+        function Computer(color, weight,brand,type){
+            this.brand=brand;
+            this.color=color;
+            this.type=type;
+            this.weight=weight;
+            this.behavior=function behavior(movie,music,games,code){
+                console.log(movie,music,games,code)
+
+            }
+        }
+        var re=new Computer('hp','purple','fuiy','30kg')
+        // for(var k in re){
+        //     console.log(re[k]);
+        // }
+        console.log(re);
+        re.behavior('watch movie','listen to music','play games','code');
+       
+
+         function Button(wide,height,color){
+            this.wide=wide;
+            this.height=height;
+            this.color=color;
+            this.behavior=function click(click){
+                console.log(click)
+            }
+
+         }
+         var re=new Button('30 m','60m','red');
+         console.log(re);
+         re.behavior('can click');
+        
+
+         function Car(weight,brand,color){
+            this.weight=weight;
+            this.brand=brand;
+            this.color=color;
+            this.behavior=function click(people,carry,field){
+                console.log(people,carry,field)
+            }
+
+         }
+         var re=new Car('30 m','w','red');
+         console.log(re);
+         re.behavior('take people','carry goods','work on the field');
+    
+         console.log(Math.max());
+         console.log(Math.max(7,8,'haf'))
+              
+
+         var myMath={
+            PI: 3.141592653,
+            max: function() {
+                var max=arguments[0];
+                for (var i=0;i<arguments.length;i++){
+                    if(max<arguments[i]){
+                        max=arguments[i];
+                    }
+                }
+                return max;
+            },
+            min: function() {
+                var min=arguments[0];
+                for (var i=0;i<arguments.length;i++){
+                    if(min<arguments[i]){
+                        min=arguments[i];
+                    }
+                }
+                return min;
+            }
+
+         }
+        console.log(myMath.PI);
+        console.log(myMath.max(1,6,7,9,39));
+        console.log(myMath.min(-10,-30.30));
+
+         
+
+         console.log(Math.floor(3.2));
+        console.log(Math.ceil(8.9))
+        console.log(Math.round(8.2))
+        console.log(Math.round(-1.5))
+        **/
+       console.log(Math.random());
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" cont>
+    <script>
+        /**
+    function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + min)) +min;
+        } 
+     var random=getRandomIntInclusive(1,10);
+     console.log(random);
+      
+        while(true){
+            var num=parseInt(prompt ('Please enter a num:'));
+            if(random>num){
+                alert ('your num is small');
+            }else if(random<num){
+                alert ('your num is great');
+            }else{
+                alert ('you are right');
+                break;
+            }
+        }
+       
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + min)) +min;
+        } 
+     var random=getRandomIntInclusive(1,10);
+     console.log(random);
+     
+            for (var i=1;i<=10;i++){
+            var num=parseInt(prompt ('Please enter a num:'));
+            if(random>num){
+                alert ('your num is small');
+            }else if(random<num){
+                alert ('your num is great');
+            }else{
+                alert ('you are right');
+            }
+        
+            }
+            **/
+           /**
+
+            var arr=new Array();
+            var date=new Date();
+            Date() 是一个构造函数，必须使用new 来调用创建我们的日期对象
+            使用Date（）如果没有参数，则返回的是当前系统的时间
+            **/
+           /**
+           var date1=new Date(2019,01,02);
+           console.log(date1);
+           var date2=new Date('2019-01-02 8:8:8');
+           console.log(date2);
+           var date3=new Date();
+           console.log(date3.getFullYear());
+           console.log(date3.getMonth());
+           console.log(date3.getDate());
+           console.log(date3.getDay());
+          
+          var date=new Date();
+          var year=date.getFullYear();
+          var month=date.getMonth() +1;
+          var date1=date.getDate();
+          var week=date.getDay();
+          var arr=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+          console.log(year +' 年 '+month+' 月 '+date1 +' 日 '+ arr[week]);
+           
+
+           var date=new Date();
+           var hour=date.getHours();
+           var min=date.getMinutes();
+           var second=date.getSeconds();
+           console.log(hour);
+           console.log(hour + ' : '+min+ ' : '+second);
+           **/
+
+           function getTime(){
+           var date=new Date();
+           var hour=date.getHours();
+           hour = hour < 10 ? '0' + hour : hour 
+           var min=date.getMinutes();
+           min= min<10 ? '0'+ min : min
+           var second=date.getSeconds();
+           second= second <10 ? '0'+ second : second;
+           return hour + ' : '+min+ ' : '+second
+           }
+          console.log( getTime());
+
+         
+     
+
+
+       
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
