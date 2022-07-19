@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            position: relative;
+            margin:auto;
+            width:20%;
+            height:200px;
+            background-color:pink;
+           background-image: url(taobao.png);
+           background-size: 100% 100%;
+            padding: 10px;
+            }
+        .box img {
+            position: absolute;
+            width:20px;
+            height:20px;
+            margin-left:-40px;
+        
+        }
+         
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="wrong.png" alt="" id="btn">
+    </div>
+
+    <script>
+        /**
+        var div=document.querySelector('div');
+        div.onclick=function(){
+            this.style.backgroundColor='purple';
+            this.style.width='400px';
+        }
+        **/
+       var btn=document.getElementById('btn');
+       var box=document.querySelector('.box');
+       btn.onclick=function(){
+        box.style.display='none';
+       }
+
+
+    </script>
+</body>
+</html>

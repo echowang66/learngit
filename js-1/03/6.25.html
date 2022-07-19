@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/**
+        var arr=[1500,1200,2000,2100,1800];
+        var arr1=[];
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]>2000){
+            //    arr1[length]=arr[i];
+            arr1.push(arr[i]);
+            }
+        }
+        console.log(arr1);
+       
+
+        var arr=[1500,1200,2000,2100,1800];
+        console.log(arr.reverse());
+        console.log(arr.sort());
+     
+        var arr2=[33,34,7,34,17];
+        var re = arr2.sort(function(a,b){
+            //按照升序的顺序排列 return a-b;
+            // 按照降序的顺序排列 
+            return b-a;
+            
+        })
+        console.log(arr2.sort());
+        console.log(re);
+           
+            var arr2=[33,34,7,34,17];
+            console.log(arr2.indexOf(22));
+            console.log(arr2.indexOf(7));
+            console.log(arr2.lastIndexOf(17));
+            
+
+            
+
+             function unique(arr){
+                var newArray=[];
+                for (var i=0;i<arr.length;i++){
+                    if(newArray.indexOf(arr[i])===-1){
+                    newArray[newArray.length]=arr[i];
+                }
+
+                }
+               
+                return newArray;
+             }
+             var re= unique(['c','a','z','a','x','a','x','c','b']);
+             console.log(re);
+
+             var arr=[7,3,3,4,0];
+             console.log(arr.toString());
+             console.log(arr.join());
+             console.log(arr.join(' & '));
+
+             
+
+              function findO(arr){
+                var position=arr.indexOf('o');
+                var num=0;
+                for (var i=0;i<arr.length;i++){      
+                if(position!==-1){
+                    console.log(position);
+                    num++;
+                    position=arr.indexOf('o',position+1);
+                }
+                console.log('The number of O :' +num);
+              }
+                return num;
+              }
+              findO('abcoefoxyozzopp');
+
+               
+
+               var str='oooabcoefoxyozzopp';
+               var index=str.indexOf('o');
+               var num=0;
+               while(index!==-1){
+                console.log(index);
+                num++;
+                index=str.indexOf('o',index+1);
+                
+               }
+               console.log('The number of o: '+num);
+           
+              var str='andy';
+              console.log(str.charAt(3));
+
+              for(var i=0;i<str.length;i++){
+                console.log(str.charAt(i));
+              }
+                  **/
+                 // 2.charCodeAt() 返回相应索引号的字符ASCII 值 目的： 判断用户按下那个键
+
+            /**     
+                 var str='andy';
+                  console.log(str.charCodeAt('y'));
+                  console.log(str[2]);
+
+                  var o={
+                    age:18, sex:'female'
+                  }
+                  if(o['age']){
+                    console.log('It has this character');
+                  }else{
+                    console.log('It does not have this character');
+                  }
+            **/
+
+            var str='abcoefoxyozzopp';
+            var obj=new Object();
+           
+            for (var i=0;i<str.length;i++){
+                var char=str.charAt(i);
+
+                if(obj[char]){
+                    obj[char]+=1;
+                }else{
+                    obj[char]=1;
+                }
+            }
+            console.log(obj);
+            var max=0;
+            for(var k in obj){
+               
+                if(obj[k]>max){
+                    max=obj[k];
+                }
+                
+            }
+            console.log(max);
+        
+
+
+
+
+
+
+
+
+
+          
+              
+
+
+
+     
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+<!-- <div class="box">Box1</div>
+<div class="box">Box2</div>
+<div id="nav">
+    <ul>
+        <li>product</li>
+        <li>Home</li>
+    </ul>
+
+
+
+<div>123</div>
+
+<button> Show the time </button>
+<div> the time </div>
+<p>234</p>
+</div> -->
+<p>I am a girl</p>
+<div>
+    123
+    <span>456</span>
+</div>
+
+
+
+    <script>
+        /**
+      var str=document.getElementsByClassName('box');
+      console.log(str);
+      var str1=document.querySelector('.box');
+      console.log(str1);
+      var str2=document.querySelector('#nav');
+      console.log(str2);
+      var str3=document.querySelectorAll('.box');
+      console.log(str3);
+  
+
+      var str4=document.body;
+      console.log(str4);
+      var str5=document.documentElement;
+      console.log(str5);
+          **/
+/**
+ * 1:选中事件
+ * 2：绑定事件
+ * 3：函数
+ 
+
+ var div=document.querySelector('div')
+ 
+ div.onclick= function(){
+    console.log('I love you');
+ }
+
+
+ var button=document.querySelector('button');
+ var div1=document.querySelector('div');
+ button.onclick=function(){
+    div1.innerText=   getDay(); 
+ }
+
+ var p=document.querySelector('p');
+ p.innerText=getDay(); 
+
+         function getDay(){
+         var date=new Date();
+          var year=date.getFullYear();
+          var month=date.getMonth() +1;
+          var date1=date.getDate();
+          var week=date.getDay();
+          var arr=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+
+          return year +' 年 '+month+' 月 '+date1 +' 日 '+ arr[week];
+        }
+         **/
+         var p=document.querySelector('p');
+        p.innerHTML='today is a good <strong>day</strong> '
+        var div=document.querySelector('div');
+        console.log(div.innerHTML)
+        console.log(div.innerText);
+        
+
+
+    </script>
+</body>
+</html>

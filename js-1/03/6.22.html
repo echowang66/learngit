@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+        var date1=new Date();
+        console.log(date1.getTime());
+        console.log(date1.valueOf());
+        var date2 = + new Date();
+        console.log(date2);
+        console.log(Date.now());
+        **/
+
+        function countDown(time){
+           var timeNow = + new Date();
+           var inputTime = + new Date(time);
+           var calTime = (inputTime - timeNow) / 1000; 
+           var d=parseInt(calTime/ 60/60 /24); 
+           d =  d<10 ? '0'+ d : d ;
+           var h=parseInt(calTime/ 60/60 %24); 
+           h = h<10 ? '0' +h : h;
+           var m= parseInt(calTime/60 %60);  
+           m = m<10 ? '0' +m : m;      
+           var s= parseInt( calTime% 60);  
+           s = s<10 ? '0' +s :s; 
+          return d+' day '+ h +' hour '+m +' minutes '+ s +' seconds '
+
+          
+        }
+      
+        
+        console.log(countDown( '2022-06-23 15:00:00'));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

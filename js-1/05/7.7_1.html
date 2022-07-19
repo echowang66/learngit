@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 100px;
+            height: 100px;
+            background-color:pink;
+        }
+        .change {
+            margin-top:100px;
+            width: 200px;
+            height: 200px;
+            background-color:purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        text
+
+    </div>
+
+    <script>
+        var firstStyle=document.querySelector('div');
+    //     var flag=0;
+    //     color.onclick=function(){
+
+    //     if(flag==0){  
+    //         this.style.backgroundColor='purple';
+    //         flag=1;
+    //     }else{
+    //         this.style.backgroundColor='pink';
+    //         flag=0;
+    //     }
+    // }
+        firstStyle.onclick=function(){
+            this.className='first change';
+        }
+
+    
+    </script>
+    
+</body>
+</html>

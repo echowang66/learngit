@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .star img {
+            width:200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="star">
+        <input type="button" value="ldh">
+        <img src="./image/722.jpg" alt="liudehua">
+    </div>
+
+    <script>
+        var ldh=document.querySelector('img');
+        var btn=document.querySelector('input');
+        flag=0;
+        btn.onclick=function() {
+            if(flag==0){
+            ldh.src='./image/zxy.jpeg';
+          
+            btn.value='zxy';
+            flag=1;
+            }else{
+                ldh.src='./image/722.jpg';
+         
+                btn.value='ldh';
+                flag=0;
+
+            }
+
+        
+           
+        }
+    </script>
+</body>
+</html>
